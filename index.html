@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Simple Tribute Page</title>
+
+    <style>
+        h1{
+            color: red;
+        }
+        #teams-played{
+            color: green;
+        }
+        #trophies-won{
+            color: gold;
+        }
+        .list-element{
+            color: blue;
+        }
+        [href="https://x.com/devprosper"]{
+            color: brown;
+        }
+        a:hover{
+            font-size: 4rem;
+            color: red;
+            background-color: blue;
+        }
+        #teams-played::before{
+            content: "Joy Is Coming";
+        }
+        #teams-played::after{
+            content: "Joy has gone back home";
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Lionel Messi</h1>
+    </header>
+
+    <section id="photo-section">
+        <div>
+            <img src="lionel-messi.webp" alt="The Greatest Man to kick a round item" width="500">
+        </div>
+    </section>
+
+    <section id="details-section">
+        <table>
+            <tr>
+                <td><strong>Full Name:</strong></td>
+                <td>Lionel Andreas Messi</td>
+            </tr>
+            <tr>
+                <td><strong>Age:</strong></td>
+                <td>38 years old</td>
+            </tr>
+            <tr>
+                <td><strong>Place of Birth:</strong></td>
+                <td>Rosario</td>
+            </tr>
+            <tr>
+                <td><strong>Nationality:</strong></td>
+                <td>Argentine</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="teams-section">
+        <h2 id="teams-played">Teams Played For</h2>
+        <ul style="list-style:square" class="list-element">
+            <li>Argentina</li>
+            <li>FC Barcelona</li>
+            <li>Paris Saint Germain</li>
+            <li>Inter Miami FC</li>
+        </ul>
+    </section>
+
+    <section id="trophies-section">
+        <h2 id="trophies-won">Trophies and Accolades Won</h2>
+        <ol style="list-style:lower-roman;" class="list-element">
+            <li>FIFA World Cup</li>
+            <li>FIFA World Club Cup</li>
+            <li>UEFA Champions League</li>
+        </ol>
+    </section>
+
+    <hr style="border-color: red;">
+
+    <a href="https://en.wikipedia.org/wiki/Lionel_Messi" target="_blank">Read More About Him</a>
+    <br>
+    <a href="https://x.com/devprosper" target="_blank">Link to my Twitter account</a>
+</body>
+</html>
